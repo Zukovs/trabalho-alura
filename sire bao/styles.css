@@ -1,0 +1,70 @@
+@import url("styles/header.css");
+@import url("styles/banner.css");
+@import url("styles/carrossel.css");
+
+/* Variáveis de Cores */
+:root {
+    --cor-de-fundo: #EBECEE; /* Cor de fundo */
+    --branco: #FFFFFF; /* Cor branca */
+    --laranja: #EB9B00; /* Cor laranja */
+    --azul-degrade: linear-gradient(97.54deg, #002f52 35.49%, #326589 165.37%); /* Gradiente azul */
+    --fonte-principal: "Poppins", sans-serif; /* Fonte principal */
+    --azul: #002F52; /* Cor azul */
+}
+
+/* Estilos do corpo */
+body {
+    background-color: var(--cor-de-fundo);
+    font-family: var(--fonte-principal);
+    font-size: 16px; /* Tamanho da fonte */
+    font-weight: 400; /* Peso da fonte */
+    line-height: 1.6; /* Melhora a legibilidade */
+    color: var(--azul); /* Cor do texto padrão */
+}
+
+/* Adicionando estilos gerais para links */
+a {
+    text-decoration: none; /* Remove sublinhado */
+    color: var(--azul); /* Cor dos links */
+    transition: color 0.3s; /* Transição suave na cor */
+}
+
+a:hover {
+    color: var(--laranja); /* Cor ao passar o mouse */
+}
+
+/* Estilos para cabeçalho */
+.cabeçalho {
+    background-color: var(--branco);
+    padding: 20px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+/* Estilos para o banner */
+.banner {
+    text-align: center;
+    padding: 40px 20px; /* Adicionando preenchimento */
+    background: var(--azul-degrade); /* Gradiente de fundo */
+    color: var(--branco); /* Cor do texto */
+}
+
+/* Estilos para o carrossel */
+.carrossel {
+    padding: 40px 20px; /* Adicionando preenchimento */
+    text-align: center;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px; /* Reduzindo o tamanho da fonte em telas pequenas */
+    }
+
+    .banner {
+        padding: 30px 10px; /* Ajustando o preenchimento do banner */
+    }
+
+    .carrossel {
+        padding: 30px 10px; /* Ajustando o preenchimento do carrossel */
+    }
+}
